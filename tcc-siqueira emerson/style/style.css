@@ -1,0 +1,337 @@
+/* =========================
+   BASE
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #e8f5f2, #dff6f0);
+    color: #2f4f4f;
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background: linear-gradient(to right, #a7dcd5, #6fbfb3);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.menu-links{
+    display: flex;
+    gap: 10px;
+}
+
+.menu-links a{
+    text-decoration: none;
+
+    background-color: #ffffff;
+    color: #005f55;
+
+    border: 1px solid #6fbfb3;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.menu-links a:hover{
+    background-color: #26a69a;
+    color: white;
+}
+
+/* LOGIN + CADASTRO + CARRINHO */
+.user-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* BOTÕES LOGIN/CADASTRO */
+.btn-secundario{
+    text-decoration: none;
+
+    background-color: #ffffff;
+    color: #005f55;
+
+    border: 1px solid #6fbfb3;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.btn-secundario:hover{
+    background-color: #26a69a;
+    color: white;
+}
+
+
+.carrinho{
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(to right, #26a69a, #00796b);
+
+    color: white;
+    font-size: 20px;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+.carrinho:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, #00796b, #004d40);
+}
+
+/* TÍTULO */
+.Titulo{
+    color: #005f55;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* LINKS PRODUTOS (VITAMINA / WHEY / CREATINA) */
+.autenticacao{
+    display: flex;
+    gap: 10px;
+}
+
+.autenticacao a{
+    text-decoration: none;
+
+    background-color: #ffffff;
+    color: #005f55;
+
+    border: 1px solid #6fbfb3;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.autenticacao a:hover{
+    background-color: #26a69a;
+    color: white;
+}
+
+/* =========================
+   CARRINHO + LOGIN + CADASTRO
+========================= */
+
+header div a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* carrinho */
+.autenticacao img{
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+}
+
+/* botões extras */
+.autenticacao_b{
+    display: inline-block;
+
+    background-color: #ffffff;
+    color: #005f55;
+
+    border: 1px solid #6fbfb3;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.autenticacao_b:hover{
+    background-color: #26a69a;
+    color: white;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 50px auto;
+    padding: 30px;
+
+    background: linear-gradient(to right, #a7dcd5, #dff6f0);
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,105,92,0.08);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.cartao{
+    background-color: #ffffff;
+
+    border-radius: 15px;
+    border: 1px solid #b2dfdb;
+
+    padding: 15px;
+    text-align: center;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartao:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* imagem */
+.cartao img{
+    width: 100%;
+    max-width: 160px;
+    height: 180px;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+
+    background-color: #F5FFFD;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* texto produto */
+.cartao p{
+    margin-top: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #005f55;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background: linear-gradient(to right, #a7dcd5, #6fbfb3);
+    color: #2f4f4f;
+
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    gap: 40px;
+    padding: 20px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h2{
+    color: #005f55;
+    font-size: 32px;
+}
+
+.footer-logo p{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.footer-links,
+.footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h3,
+.footer-social h3{
+    color: #005f55;
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a{
+    text-decoration: none;
+    color: #2f4f4f;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+    color: #005f55;
+    transform: translateX(5px);
+}
+
+.footer-bottom{
+    text-align: center;
+
+    padding: 15px;
+    margin-top: 20px;
+
+    border-top: 1px solid rgba(0,105,92,0.2);
+    font-size: 14px;
+}

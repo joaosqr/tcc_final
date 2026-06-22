@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #E8F5F2, #DFF6F0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* BOTÃO VOLTAR */
+.voltar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.voltar a {
+    text-decoration: none;
+    background-color: #00695C;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 105, 92, 0.2);
+}
+
+.voltar a:hover {
+    background-color: #4DB6AC;
+}
+
+/* CARD PRINCIPAL */
+.bloco_cadastro {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 105, 92, 0.15);
+    border: 1px solid #B2DFDB;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+/* CABEÇALHO */
+.cabecalho {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icone {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    display: block;
+    color: #00796B;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    color: #00695C;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    color: #2F4F4F;
+    font-size: 14px;
+}
+
+/* CAMPOS */
+.campo {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #B2DFDB;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background: #F5FFFD;
+    color: #2F4F4F;
+}
+
+.campo:focus {
+    border-color: #4DB6AC;
+    box-shadow: 0 0 8px rgba(77, 182, 172, 0.3);
+}
+
+/* SEXO */
+.sexo {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: #2F4F4F;
+    margin: 10px 0;
+}
+
+.sexo label {
+    cursor: pointer;
+}
+
+/* BOTÃO */
+.botao_cadastro {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #00695C, #4DB6AC);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow: 0 6px 15px rgba(0, 105, 92, 0.2);
+}
+
+.botao_cadastro:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 105, 92, 0.3);
+}
+
+/* LINK LOGIN */
+.link-login {
+    text-align: center;
+    color: #00796B;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+    color: #004D40;
+}
+
+/* RESPONSIVO */
+@media (max-width: 450px) {
+    .bloco_cadastro {
+        width: 100%;
+    }
+}

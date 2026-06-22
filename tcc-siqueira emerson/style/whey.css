@@ -1,0 +1,306 @@
+/* =========================
+   BASE GERAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #e8f5f2, #dff6f0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #2f4f4f;
+}
+
+main{
+    flex: 1;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background: linear-gradient(to right, #a7dcd5, #6fbfb3);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.Titulo{
+    color: #005f55;
+}
+
+/* =========================
+   VOLTAR
+========================= */
+
+.voltar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.voltar a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #005f55;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    transition: 0.3s;
+
+    border: 1px solid #6fbfb3;
+}
+
+.voltar a:hover{
+    background-color: #26a69a;
+    color: white;
+}
+
+.voltar h1{
+    font-size: 45px;
+    font-style: italic;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* =========================
+   AUTENTICAÇÃO
+========================= */
+
+.autenticacao{
+    display: flex;
+    gap: 10px;
+}
+
+.autenticacao a{
+    color: #005f55;
+    background-color: #ffffff;
+
+    border: 1px solid #6fbfb3;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 17px;
+
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.autenticacao a:hover{
+    background-color: #26a69a;
+    color: white;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos{
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+    padding: 40px;
+
+    background: linear-gradient(to right, #a7dcd5, #dff6f0);
+
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+
+    box-shadow: 0 5px 15px rgba(0, 105, 92, 0.08);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.cartao{
+    background-color: #ffffff;
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 15px;
+
+    border: 1px solid #a7dcd5;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s ease;
+}
+
+.cartao:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.cartao img{
+    width: 100%;
+    max-width: 140px;
+    height: 180px;
+
+    object-fit: contain;
+    margin: 0 auto;
+
+    background-color: #F5FFFD;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.info{
+    background: linear-gradient(to right, #26a69a, #00695c);
+
+    margin-top: 15px;
+    padding: 15px 10px;
+
+    border-radius: 6px;
+}
+
+.info h2{
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.info p{
+    color: #e8fff8;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0 0 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background: linear-gradient(to right, #a7dcd5, #6fbfb3);
+
+    color: #2f4f4f;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 20px;
+    gap: 40px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo{
+    max-width: 300px;
+}
+
+.footer-logo h2{
+    color: #005f55;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p{
+    line-height: 1.6;
+    color: #2f4f4f;
+}
+
+.footer-links,
+.footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h3,
+.footer-social h3{
+    margin-bottom: 15px;
+    color: #005f55;
+}
+
+.footer-links a,
+.footer-social a{
+    text-decoration: none;
+    color: #2f4f4f;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+    color: #005f55;
+    transform: translateX(5px);
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 15px;
+
+    border-top: 1px solid rgba(0,105,92,0.2);
+
+    font-size: 14px;
+    color: #2f4f4f;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .voltar{
+        flex-direction: column;
+    }
+
+    .voltar h1{
+        font-size: 32px;
+    }
+
+    .produtos{
+        width: 95%;
+        padding: 20px;
+    }
+}
