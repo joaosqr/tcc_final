@@ -49,11 +49,9 @@ body {
     padding: 35px;
     box-shadow: 0 10px 30px rgba(0, 105, 92, 0.15);
     border: 1px solid #B2DFDB;
-
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
 

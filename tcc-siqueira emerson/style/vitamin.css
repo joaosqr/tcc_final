@@ -204,6 +204,18 @@ header{
     font-weight: bold;
     margin: 8px 0 0 0;
 }
+.info-2{
+    background:  #26a69a;;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 15px 10px;
+    
+    border-radius: 6px;
+}
+.info-2:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
 
 /* =========================
    FOOTER
